@@ -1,26 +1,149 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-<title>Nyifff 2026</title>
-
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nyifff 2026</title>
+  <style>
+    :root {
+      --page-max: 980px;
+      --card-radius: 14px;
+    }
+    body {
+      background: #ffffff;
+      color: #1c1c1c;
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .page {
+      max-width: var(--page-max);
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+    .hero {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+    .hero img {
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    .title {
+      margin: 16px 0 8px;
+      font-size: clamp(22px, 3vw, 30px);
+      letter-spacing: 0.2px;
+    }
+    .card {
+      background: transparent;
+      border: none;
+      border-radius: var(--card-radius);
+      padding: 18px 20px;
+      box-shadow: none;
+      margin: 16px 0;
+    }
+    .card p {
+      margin: 0 0 12px;
+    }
+    .motto {
+      text-align: right;
+      font-style: italic;
+      margin-top: -8px;
+    }
+    .motto p {
+      margin: 0;
+    }
+    .card ul {
+      margin: 8px 0 12px 20px;
+      padding: 0;
+    }
+    .card a {
+      color: #1c4f7a;
+    }
+    .photo {
+      text-align: center;
+    }
+    .photo img {
+      width: min(360px, 80vw);
+      height: auto;
+      display: inline-block;
+      border-radius: 10px;
+    }
+    .two-col {
+      display: flex;
+      gap: 18px;
+      align-items: stretch;
+      margin: 16px 0;
+    }
+    .two-col .card {
+      flex: 1 1 0;
+      margin: 0;
+    }
+    .two-col .photo {
+      flex: 0 1 360px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      border: none;
+      border-radius: var(--card-radius);
+      box-shadow: none;
+      padding: 16px;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 19px;
+      }
+      .page {
+        padding: 18px 14px 36px;
+      }
+      .card {
+        padding: 16px;
+      }
+      .two-col {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-<img src="nyiffflogo_hosszu.png" alt="NYIFFF Logo" style="display: block; margin: 0 auto; width: 1200px; height: auto;">
-<h2 style="text-align: center;">Kreatív fizika csapatverseny</h2>
-<p>A Nyílthelyi Fifiqs Fiziqs Feladatok (NYIFFF) versenyét 1993-ban indította útjára a Magyar Fizikushallgatók Egyesülete és Dávid Gyula fizikus, egyetemi oktató (ELTE). A verseny nagy népszerűségnek örvend a fizikus (és nemcsak fizikus!) egyetemi hallgatók körében. A budapesti ELTE és BME mellett rendszeres résztvevők a szegedi és debreceni diákok is, sőt több ízben a kolozsvári egyetemről is érkeztek versenyzők.</p>
-<p>
- A NYIFFF szellemisége szakít a hazai oktatásban megszokott versenyekével, sőt próbálja pótolni az egyetemi képzésben jelenlévő hiányosságokat is:
-<ul>
-  <li> a versenyzők egyrészt megtapasztalják, hogy a hatékony csapatmunka az eredményesség nélkülözhetetlen feltétele </li>
-  <li> másrészt olyan életszerű problémákkal találkoznak, melyeknek több, esetleg egymásnak ellentmondó megoldásuk is lehet.</li>
-</ul>
-A verseny helyszíne a csodálatos, Balaton parti Szigliget.<br>
-A tábor megközelítése: <a href="terkep.gif" target="_blank">térkép</a><br>
-Találkozzunk Szigligeten: <b>NYIFFF-re fel!</b> 
-</p>
-<img src="kicsi_sk1.1.jpg" alt="Badacsony" style="display: block; margin: 0 auto; width: 300px; height: auto;">
+  <div class="page">
+    <div class="hero">
+      <img src="nyiffflogo_hosszu.png" alt="NYIFFF Logo">
+      <h2 class="title">Kreatív fizika csapatverseny</h2>
+    </div>
 
+    <div class="card">
+      <p><b>Jelentkezés a 27. NYIFFF-re:</b> 2026. május 15 – 17. Elindult a jelentkezés! &gt;&gt;&gt;</p>
+    </div>
+
+    <div class="card motto">
+      <p>„Jó szóval oktasd, játszani is engedd...”</p>
+    </div>
+
+    <div class="card">
+      <p>A Nyílthelyi Fifiqs Fiziqs Feladatok (NYIFFF) versenyét 1993-ban indította útjára a Magyar Fizikushallgatók Egyesülete és Dávid Gyula fizikus, egyetemi oktató (ELTE). A verseny nagy népszerűségnek örvend a fizikus (és nemcsak fizikus!) egyetemi hallgatók körében. A budapesti ELTE és BME mellett rendszeres résztvevők a szegedi és debreceni diákok is, sőt több ízben a kolozsvári egyetemről is érkeztek versenyzők.</p>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <p>A NYIFFF szellemisége szakít a hazai oktatásban megszokott versenyekével, sőt próbálja pótolni az egyetemi képzésben jelenlévő hiányosságokat is:</p>
+        <ul>
+          <li>a versenyzők egyrészt megtapasztalják, hogy a hatékony csapatmunka az eredményesség nélkülözhetetlen feltétele</li>
+          <li>másrészt olyan életszerű problémákkal találkoznak, melyeknek több, esetleg egymásnak ellentmondó megoldásuk is lehet.</li>
+        </ul>
+        <p>A verseny helyszíne a csodálatos, Balaton parti Szigliget.<br>
+        A tábor megközelítése: <a href="terkep.gif" target="_blank">térkép</a><br>
+        Találkozzunk Szigligeten: <b>NYIFFF-re fel!</b></p>
+      </div>
+
+      <div class="photo" aria-hidden="true">
+        <img src="kicsi_sk1.1.jpg" alt="Badacsony">
+      </div>
+    </div>
+  </div>
 </body>
 </html>
